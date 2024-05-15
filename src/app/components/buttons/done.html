@@ -1,0 +1,84 @@
+<div class="flex w-full items-center justify-center gap-10 pt-48">
+  <button
+    class="flex rounded-lg bg-indigo-600 px-6 py-3 font-light text-indigo-200 hover:bg-indigo-800 hover:shadow-md"
+  >
+    I love
+  </button>
+
+  <button
+    class="flex rounded-lg bg-indigo-100 px-6 py-3 font-light text-indigo-600 hover:bg-indigo-200 hover:shadow-md"
+  >
+    Tailwind
+  </button>
+
+  <button
+    class="flex items-center justify-center gap-2 rounded-lg bg-indigo-100 px-6 py-3 font-light text-indigo-600 hover:bg-indigo-200 hover:shadow-md"
+  >
+    So much
+
+    <div class="grid h-full place-items-center text-lg">
+      <ng-icon name="bootstrapGithub"> </ng-icon>
+    </div>
+  </button>
+</div>
+
+<div class="flex w-full items-center justify-center gap-10 pt-48">
+  <app-button additionalClass="p-8">I love</app-button>
+</div>
+
+<!--  -->
+
+<div class="flex w-full items-center justify-center gap-10 pt-48">
+  <button class="btn btn-primary">I love</button>
+
+  <button class="btn btn-secondary">Tailwind</button>
+
+  <button class="btn btn-secondary">
+    So much
+
+    <div class="icon">
+      <ng-icon name="bootstrapGithub"> </ng-icon>
+    </div>
+  </button>
+</div>
+
+<!--
+@layer components {
+  .btn {
+    @apply flex items-center justify-center gap-2 rounded-lg  px-6 py-3 font-light  hover:shadow-md;
+  }
+
+  .btn-primary {
+    @apply bg-indigo-600 text-indigo-200 hover:bg-indigo-800;
+  }
+
+  .btn-secondary {
+    @apply bg-indigo-100 text-indigo-600 hover:bg-indigo-200;
+  }
+
+  .icon {
+    @apply grid h-full place-items-center;
+  }
+
+  .icon-sm {
+    @apply text-sm;
+  }
+
+  .icon-lg {
+    @apply text-lg;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->

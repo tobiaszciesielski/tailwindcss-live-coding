@@ -6,8 +6,11 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'tailwind-nglodz';
+  // ngOnInit(): void {
+  //   if (window.document.body.clientWidth < breakpoints.sm) {
+  //     alert('Small screen alert');
+  //   }
+  // }
 }

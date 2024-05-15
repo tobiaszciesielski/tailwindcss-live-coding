@@ -1,0 +1,34 @@
+<div class="flex w-full justify-center pt-48">
+  <form
+    class="group flex flex-col items-end rounded-xl bg-blue-50 p-7 has-[:invalid]:bg-red-400"
+  >
+    <label class="mb-8 flex flex-col">
+      <span class="text-sm font-medium text-slate-700" for="email">
+        Email
+      </span>
+
+      <input
+        id="email"
+        autocomplete="off"
+        class="peer rounded-md bg-blue-300 px-4 py-2 invalid:bg-pink-200 invalid:text-pink-600"
+        type="email"
+      />
+      <span
+        class="invisible text-xs peer-invalid:visible peer-invalid:text-red-600"
+      >
+        Email invalid
+      </span>
+    </label>
+
+    <button class="max-w-20 rounded-md bg-blue-700 p-2 text-sm text-white">
+      <!-- <button
+      class="max-w-20 rounded-md bg-[--bg] p-2 text-[--text] group-hover:bg-[--hover]"
+      style="
+      --text:{{ TEXT_COLOR | async }};
+      --bg:{{ BG_COLOR }};
+      --hover:{{ HOVER_COLOR }};"
+    > -->
+      Submit
+    </button>
+  </form>
+</div>
