@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { breakpoints } from './utils/breakpoints';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,9 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  // ngOnInit(): void {
-  //   if (window.document.body.clientWidth < breakpoints.sm) {
-  //     alert('Small screen alert');
-  //   }
-  // }
+  ngOnInit(): void {
+    if (window.document.body.clientWidth < breakpoints.sm) {
+      alert('Small screen alert');
+    }
+  }
 }
