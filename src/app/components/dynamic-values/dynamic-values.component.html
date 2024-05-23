@@ -1,5 +1,7 @@
 <div class="flex w-full justify-center pt-48">
-  <form class="flex flex-col items-end rounded-xl bg-blue-50 p-7">
+  <form
+    class="group flex flex-col items-end rounded-xl bg-blue-50 p-7 has-[:invalid]:bg-red-200"
+  >
     <label class="mb-8 flex flex-col">
       <span class="text-sm font-medium text-slate-700" for="email">
         Email
@@ -8,13 +10,22 @@
       <input
         id="email"
         autocomplete="off"
-        class="rounded-md bg-blue-300 px-4 py-2"
+        class="peer rounded-md bg-blue-300 px-4 py-2 invalid:text-ngLodz"
         type="email"
       />
-      <span class="text-xs"> Email invalid </span>
+      <span
+        class="invisible text-xs peer-invalid:visible peer-invalid:text-ngLodz"
+      >
+        Email invalid
+      </span>
     </label>
 
-    <button class="max-w-20 rounded-md bg-blue-700 p-2 text-sm text-white">
+    <button
+      class="after:-hover:p-8 hover:bg- max-w-20 rounded-md bg-[--bg] p-2 text-sm text-white group-hover:p-4"
+      style="--text:{{ TEXT_COLOR | async }}; --bg:{{ BG_COLOR }}; hover:{{
+        HOVER_COLOR
+      }};"
+    >
       Submit
     </button>
   </form>

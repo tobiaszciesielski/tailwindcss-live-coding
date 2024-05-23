@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+@layer components {
+  .btn {
+    @apply flex items-center justify-center gap-2 rounded-lg  px-6 py-3 font-light  hover:shadow-md;
+  }
+
+  .btn-primary {
+    @apply bg-indigo-600 text-indigo-200 hover:bg-indigo-800;
+  }
+
+  .btn-secondary {
+    @apply bg-indigo-100 text-indigo-600 hover:bg-indigo-200;
+  }
+
+  .icon {
+    @apply grid h-full place-items-center;
+  }
+
+  .icon-sm {
+    @apply text-sm;
+  }
+
+  .icon-lg {
+    @apply text-lg;
+  }
+}
+
+@layer utilities {
+  .centered-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
